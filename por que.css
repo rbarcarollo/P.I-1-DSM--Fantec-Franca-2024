@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    border: 0;
+    color: aliceblue;
+    background-color: black;
+}
+
+ul{
+    padding: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:visited{
+    color: aliceblue;
+}
+a:hover{
+    color: orange;
+}
+
+.is{
+    color: orange;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1{
+    padding-top: 50px;
+}
+
+.container{
+    align-content: center;
+    padding: 10px;
+    padding-left: 300px;
+    width: 600px;
+}
+#logo{
+    width: 150px;
+    height: 150px;
+}
+
+#img1{
+    padding: 100px;
+    height: 200px;
+    width: 200px;
+}
+
+#img2{
+    padding: 100px;
+    height: 200px;
+    width: 200px;
+}
+#img3{
+    margin-bottom: 45px;
+    padding: 100px;
+    height: 200px;
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    margin-left: 300px;
+    flex-direction: row;
+    width: 15px;
+    padding: 5px;
+    background-color: #000000;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+
+.menu > li {
+    position: relative; 
+}
+
+.menu > li > a {
+    display: block;
+    padding: 10px ;
+    color: white;
+    text-decoration: none;  
+}
+
+.menu > li > a:hover {
+    color: #ff5100;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 50px;
+    z-index: 2;
+}
+
+.dropdown li a {
+    padding: 5px 2px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.dropdown li a:hover {
+    color: #ff9100;
+}
+
+.menu > li:hover .dropdown {
+    display: block;
+    
+}

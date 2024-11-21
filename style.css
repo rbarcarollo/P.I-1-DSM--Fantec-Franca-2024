@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1d1d1d;
+    color: #e0e0e0;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+
+li{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    text-align: center;
+    padding: 25px;
+}
+
+
+.container{
+    width: 1300px;
+    display: flex;  
+    flex-direction: row;
+    color: aliceblue;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 500px;
+}
+
+.logo {
+    position: relative; 
+    display: flex;
+    align-items: center;
+}
+
+.logo::after {
+    content: "";
+    position: absolute; 
+    bottom: -20px;
+    left: 15px; 
+    transform: translateX(-50%); 
+    width: 350px; 
+    height: 150px; 
+    background-color: rgba(255, 165, 0, 0.5);  
+    border-radius: 50%; 
+    filter: blur(20px); 
+    z-index: -1;
+}
+
+
+
+p{
+    padding: 15px;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:visited{
+    color: aliceblue;
+}
+a:hover{
+    color: orange;
+}
+
+h1{
+    padding: 20px;
+}
+#in{
+    padding: 50px;
+    width: 600px;
+    opacity: 50%;
+    border-radius: 100px;
+}
+a{
+    cursor: pointer;
+}
+
+#im{
+    
+    width: 200px;
+    padding: 5px; 
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+button{
+    color: aliceblue;
+    border-radius: 15px;
+    background-color: orange;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(147, 101, 14);
+}
+
+.navbar {
+    display: flex;
+    margin-left: 350px; 
+    flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+
+.menu > li {
+    position: relative; 
+}
+
+.menu > li > a {
+    padding: 1  px 15px;
+    color: white;
+    text-decoration: none;  
+}
+
+
+.menu > li > a:hover {
+    color: #ff5100;
+}
+
+
+
+.dropdown {
+    border-radius: 15px;
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0px; 
+    background-color: rgb(26, 25, 25); 
+    list-style: none;
+    padding: 1px 0; 
+    min-width: 100px; 
+    z-index: 1;
+    text-align: left; 
+    border-radius: 15px;
+}
+
+.dropdown li a {
+    padding: 1px 1px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    
+}
+
+.dropdown li:hover{
+    background-color: #ff9100;
+    color: aliceblue;
+    border-radius: 15px;
+}
+
+
+
+.menu > li:hover .dropdown {
+    display: block; 
+    opacity: 1;
+    visibility: visible;
+}
+
+img{
+    border-radius: 25px;
+    width: 50%;
+}
+
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none; /* Hide all images by default */
+}
+
+.carousel-images img.active {
+    display: block; /* Show the active image */
+}
+
+.bu {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-350%); /* Adjust for vertical centering */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10; /* Ensure buttons are above images */
+}
+.prev {
+    display: flex;
+   
+    left: 10px;
+    height: 50px;
+}
+.next {
+    display: flex;
+   
+    left: 10px;
+    height: 50px;
+}

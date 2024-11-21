@@ -1,0 +1,160 @@
+body{
+    background-color: black;
+    color:aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+
+h1{
+    color: aliceblue;
+    
+}
+
+h3{
+    padding-left: 5px;
+    color: orange;
+}
+
+img{
+    padding-top: 20px;
+    height: 20px;
+    width: 30px;
+}
+
+#d1{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+}
+#d1{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+}
+#d2{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+}
+#d3{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+}
+#d4{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+}
+#d5{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+}
+#d6{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+}
+
+#home{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif,;
+    font-weight: 1000;
+    color: aliceblue;
+    padding-left: 650px;
+}
+
+#home:hover{
+    color: orange;
+}
+p{
+    width: 300px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; 
+    padding: 50px;
+}
+
+.d{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+
+}
+
+.navbar {
+    display: flex;
+    margin-left: 350px;
+    flex-direction: row;
+    width: 15px;
+    padding: 15px;
+    background-color: #000000;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+
+.menu > li {
+    position: relative; 
+}
+
+.menu > li > a {
+    display: block;
+    padding: 10px ;
+    color: white;
+    text-decoration: none;  
+}
+
+.menu > li > a:hover {
+    color: #ff5100;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 100px;
+    z-index: 2;
+}
+
+.dropdown li a {
+    padding: 5px 2px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.dropdown li a:hover {
+    color: #ff9100;
+}
+
+.menu > li:hover .dropdown {
+    display: block;
+    width: 15px;
+}

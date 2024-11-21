@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contato</h1>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+            <button type="button" id="homeButton">Home</button>
+        </form>
+        <div id="responseMessage" class="hidden"></div>
+    </div>
+    
+    <script src="./contato.js"></script>
+</body>
+</html>
